@@ -4,9 +4,7 @@ import de.hofmann.modell.Product;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.Query;
 import java.util.List;
 
 public class ProductClient {
@@ -14,14 +12,11 @@ public class ProductClient {
     private EntityManager em;
 
     public ProductClient() {
-        String PERSISTENCE_UNIT_NAME = "products";
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
-        em = factory.createEntityManager();
+        em = Persistence.createEntityManagerFactory("products").createEntityManager();
     }
 
     public List<Product> getAllProducts(){
-        Query q = em.createQuery("select p from Product p");
-        return q.getResultList();
+        return em.createQuery("select p from Product p").getResultList();
     }
     public void createProduct(@NotNull Product p){
         em.getTransaction().begin();

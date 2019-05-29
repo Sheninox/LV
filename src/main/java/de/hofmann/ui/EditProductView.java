@@ -66,7 +66,6 @@ public class EditProductView extends Div implements HasUrlParameter<Long> {
 
 	public EditProductView() {
 		client = new ProductClient();
-
 	}
 
 	private int getDiffYears(Date first, Date last) {

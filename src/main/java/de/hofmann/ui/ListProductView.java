@@ -1,12 +1,12 @@
 package de.hofmann.ui;
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.page.Page;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import de.hofmann.datacess.ProductClient;
@@ -14,16 +14,14 @@ import de.hofmann.modell.Product;
 
 import java.util.List;
 
-@PageTitle(("Liste Aller Producte"))
+@PageTitle("Liste Aller Produkte")
 @Route("")
 public class ListProductView extends Div {
 	private static final long serialVersionUID = 1L;
-	
-	static final String VIEW_NAME = "listProductView";
+
 	private ProductClient client;
 
 	public ListProductView() {
-
 
 		client = new ProductClient();
 		Grid<Product> grid = new Grid<>();
@@ -32,7 +30,9 @@ public class ListProductView extends Div {
 
 		List<Product> products = client.getAllProducts();
 
-		Label Title = new Label("Liste Aller Producte");
+		Label Title = new Label("Liste Aller Produkte");
+
+
 
 		grid.setItems(products);
 
@@ -44,23 +44,20 @@ public class ListProductView extends Div {
 		grid.setHeightByRows(true);
 		grid.setSizeFull();
 
+
+
 		HorizontalLayout hlayout = new HorizontalLayout(grid);
 		hlayout.setSizeFull();
 
 		create.addClickListener(e->this.getUI().ifPresent(ui->ui.navigate(CreateProductView.class)));
 
-		grid.addSelectionListener(s->{
-
-			this.getUI().ifPresent(ui-> ui.navigate(EditProductView.class, s.getFirstSelectedItem().get().getID()));
-
-		});
+		grid.addSelectionListener(s-> this.getUI().ifPresent(ui-> ui.navigate(EditProductView.class, s.getFirstSelectedItem().get().getID())));
 
 		VerticalLayout layout = new VerticalLayout(Title, hlayout, create);
 		this.add(layout);
 	}
 
 	private HorizontalLayout buildQuantButtons(Product product) {
-		HorizontalLayout hz;
 
 		Label qunt = new Label(Integer.toString(product.getQuantity()));
 
@@ -74,15 +71,11 @@ public class ListProductView extends Div {
 			qunt.setText(Integer.toString(Integer.parseInt(qunt.getText())-1));
 		});
 
-
-
-		return  hz = new HorizontalLayout(qunt, add, min);
+		return new HorizontalLayout(qunt, add, min);
 	}
 
 	private Button buildDeleteButton(Product p) {
-		Button button = new Button("DEL");
-		button.addClickListener(e -> {client.deleteProduct(p); this.getUI().ifPresent(ui -> ui.navigate(this.getClass()));});
-		return button;
+		return new Button("DEL", e -> {client.deleteProduct(p);UI.getCurrent().getPage().reload();});
 	}
 
 }
