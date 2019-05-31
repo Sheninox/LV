@@ -1,4 +1,4 @@
-package de.hofmann.modell;
+package de.hofmann.LV.modell;
 
 import org.jetbrains.annotations.Contract;
 
@@ -13,12 +13,12 @@ import java.sql.Date;
 @Entity
 @SuppressWarnings("unused")
 public class Product {
-	
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long ID;
-	
+
 	private String name;
 	private int quantity;
 	private Date adDate;

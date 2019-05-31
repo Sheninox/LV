@@ -1,6 +1,6 @@
-package de.hofmann.datacess;
+package de.hofmann.LV.datacess;
 
-import de.hofmann.modell.Product;
+import de.hofmann.LV.modell.Product;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.EntityManager;

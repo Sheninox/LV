@@ -1,15 +1,18 @@
-package de.hofmann.ui;
+package de.hofmann.LV.ui;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.combobox.ComboBox;
 import com.vaadin.flow.component.datepicker.DatePicker;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import de.hofmann.datacess.ProductClient;
-import de.hofmann.modell.Product;
+import de.hofmann.ArticleDB.modell.Article;
+import de.hofmann.LV.datacess.ProductClient;
+import de.hofmann.LV.modell.Product;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -34,14 +37,18 @@ public class CreateProductView extends Div {
 		date.setValue(LocalDate.now());
 
 		Button save = new Button("Save", e -> {
-			product = new Product();
-			product.setName(name.getValue());
-			product.setQuantity(Integer.parseInt(quantity.getValue()));
-			product.setAdDate(Date.valueOf(date.getValue()));
-			product.setDuration(Date.valueOf(date.getValue().plusYears(Integer.parseInt(duration.getValue()))));
-			client.createProduct(product);
-			this.getUI().ifPresent(ui -> ui.navigate(ListProductView.class));
 
+			if (name.getValue() == "" || quantity.getValue() == "" || duration.getValue() == ""){
+				Notification.show("Überprüfen sie ihre eingaben");
+			}else {
+				product = new Product();
+				product.setName(name.getValue());
+				product.setQuantity(Integer.parseInt(quantity.getValue()));
+				product.setAdDate(Date.valueOf(date.getValue()));
+				product.setDuration(Date.valueOf(date.getValue().plusYears(Integer.parseInt(duration.getValue()))));
+				client.createProduct(product);
+				this.getUI().ifPresent(ui -> ui.navigate(ListProductView.class));
+			}
 
 		});
 		VerticalLayout layout = new VerticalLayout(title, name, date, duration, quantity, save);
