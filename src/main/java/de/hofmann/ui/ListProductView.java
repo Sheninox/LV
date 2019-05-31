@@ -5,14 +5,25 @@ import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
+import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.page.Page;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import de.hofmann.datacess.ProductClient;
 import de.hofmann.modell.Product;
+import org.eclipse.persistence.jpa.jpql.parser.DateTime;
 
+import java.sql.Date;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
 @PageTitle("Liste Aller Produkte")
 @Route("")
@@ -55,6 +66,30 @@ public class ListProductView extends Div {
 
 		VerticalLayout layout = new VerticalLayout(Title, hlayout, create);
 		this.add(layout);
+
+		makeNotifivations(products);
+
+	}
+
+	private void makeNotifivations(List<Product> list) {
+
+		list.stream().forEach(p->{
+
+			Instant d1i = Instant.ofEpochMilli(getCalendar(Date.valueOf(LocalDate.now())).getTimeInMillis());
+			Instant d2i = Instant.ofEpochMilli(getCalendar(p.getDuration()).getTimeInMillis());
+
+			LocalDateTime startDate = LocalDateTime.ofInstant(d1i, ZoneId.systemDefault());
+			LocalDateTime endDate = LocalDateTime.ofInstant(d2i, ZoneId.systemDefault());
+			if (ChronoUnit.WEEKS.between(startDate, endDate) < 4) {
+				Notification notification = new Notification("", -1);
+
+				notification.add(new Label("Produkt: "+ p.getName() +" Leuft Bald ab"));
+				notification.add(new Button("X", e-> notification.close()));
+				notification.open();
+			}
+
+		});
+
 	}
 
 	private HorizontalLayout buildQuantButtons(Product product) {
@@ -76,6 +111,12 @@ public class ListProductView extends Div {
 
 	private Button buildDeleteButton(Product p) {
 		return new Button("DEL", e -> {client.deleteProduct(p);UI.getCurrent().getPage().reload();});
+	}
+
+	private Calendar getCalendar(Date date) {
+		Calendar cal = Calendar.getInstance(Locale.US);
+		cal.setTime(date);
+		return cal;
 	}
 
 }

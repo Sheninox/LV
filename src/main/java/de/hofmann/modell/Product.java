@@ -1,5 +1,7 @@
 package de.hofmann.modell;
 
+import org.jetbrains.annotations.Contract;
+
 import javax.persistence.Entity;
 
 import javax.persistence.GeneratedValue;
@@ -22,6 +24,7 @@ public class Product {
 	private Date adDate;
 	private Date duration;
 
+	@Contract(pure = true)
 	public Product(){}
 
 	public Long getID() {
