@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0ba3d7d-45d0-4cdf-9d6e-d3fd5e2ff8c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/dataacess/ArticleClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/modell/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/CreateArticleView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/EditArticleView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/ListArticleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/rest/ArticleReciver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/rest/LVReciver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LV.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LV.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBINF/lib/eclipselink-2.7.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/eclipselink-2.7.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBINF/lib/javax.persistence-api-2.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/javax.persistence-api-2.2.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/datacess/ProductClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/datacess/ProductClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/modell/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/modell/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/ui/CreateProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/CreateProductView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/ui/EditProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/EditProductView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/ui/ListProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/ListProductView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/dataacess/ArticleClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/dataacess/ArticleClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/ListArticleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/ListArticleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/ListProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/ListProductView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +26,53 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/rest/ArticleReciver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/ListProductView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1445">
+              <caret line="141" column="13" lean-forward="true" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/LV/rest/LVReciver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,14 +112,18 @@
         <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ProuctDB/dataacess/ProductClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ProuctDB/ui/ListArticleView.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/dataacess/ArticleClient.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/ListProductView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/ListArticleView.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/EditProductView.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/CreateProductView.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/EditArticleView.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/CreateArticleView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/ListArticleView.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/LV/rest/LVReciver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/dataacess/ArticleClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/rest/ArticleReciver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/ListProductView.java" />
       </list>
     </option>
   </component>
@@ -115,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,11 +175,121 @@
               <item name="LV" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+              <item name="ArticleDB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+              <item name="ArticleDB" type="462c0819:PsiDirectoryNode" />
+              <item name="dataacess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+              <item name="ArticleDB" type="462c0819:PsiDirectoryNode" />
+              <item name="modell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+              <item name="ArticleDB" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hofmann" type="462c0819:PsiDirectoryNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -139,7 +297,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/de/hofmann/LV" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -147,19 +305,22 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaTest\vaadintest" />
-      <recent name="D:\JavaTest\vaadintest\src\main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaTest\LV\src\main\java\de\hofmann\LV" />
+      <recent name="D:\JavaTest\LV\src\main\java\de\hofmann\LV\ui" />
+      <recent name="D:\JavaTest\vaadintest\src\main\java" />
+      <recent name="D:\JavaTest\vaadintest\src\main\java\de\hofmann" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="de.hofmann.ProuctDB.modell" />
       <recent name="de.hofmann.ProuctDB.dataacess" />
       <recent name="de.hofmann.ui" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaTest\LV\src\main\java\de\hofmann\LV\ui" />
-      <recent name="D:\JavaTest\vaadintest\src\main\java" />
-      <recent name="D:\JavaTest\vaadintest\src\main\java\de\hofmann" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaTest\LV\src\main\webapp" />
+      <recent name="D:\JavaTest\LV\WEB-INF" />
+      <recent name="D:\JavaTest\vaadintest" />
+      <recent name="D:\JavaTest\vaadintest\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -175,7 +336,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="vaadintest [package,jetty:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="LV [package,jetty:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -188,6 +349,7 @@
               <list>
                 <option value="package" />
                 <option value="jetty:run" />
+                <option value="-Djetty.host=0.0.0.0" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -217,7 +379,10 @@
       <workItem from="1559285153673" duration="60000" />
       <workItem from="1559285218431" duration="951000" />
       <workItem from="1559288341192" duration="27000" />
-      <workItem from="1559292385168" duration="14604000" />
+      <workItem from="1559292385168" duration="16806000" />
+      <workItem from="1559545067443" duration="996000" />
+      <workItem from="1559552603745" duration="12022000" />
+      <workItem from="1559630889498" duration="4200000" />
     </task>
     <task id="LOCAL-00001" summary="code cleanup">
       <created>1559135952588</created>
@@ -233,11 +398,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559295590895</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added articles(db, editing, reating, listing), filtering, scrolling, fast create">
+      <created>1559308159049</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559308159049</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32318000" />
+    <option name="totallyTimeSpent" value="51738000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -250,8 +422,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2707775" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22050938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -276,7 +449,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297587" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -325,7 +498,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="code cleanup" />
     <MESSAGE value="added about to be bad notifivations" />
-    <option name="LAST_COMMIT_MESSAGE" value="added about to be bad notifivations" />
+    <MESSAGE value="added articles(db, editing, reating, listing), filtering, scrolling, fast create" />
+    <option name="LAST_COMMIT_MESSAGE" value="added articles(db, editing, reating, listing), filtering, scrolling, fast create" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/HelloWorld.java" />
@@ -381,60 +555,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/MainView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
-          <folding>
-            <element signature="n#persistence-unit#0;n#persistence#0;n#!!top" />
-            <element signature="n#persistence-unit#1;n#persistence#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/dataacess/ArticleClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#23#1" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/ListArticleView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-545">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/MainView.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/CreateProductView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -458,18 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/modell/Article.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/EditArticleView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -481,10 +594,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+          <folding>
+            <element signature="n#persistence-unit#0;n#persistence#0;n#!!top" />
+            <element signature="n#persistence-unit#1;n#persistence#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/ui/ListArticleView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/dataacess/ArticleClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#23#1" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
+            <element signature="e#0#48#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/modell/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/LV/rest/LVReciver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/ArticleDB/rest/ArticleReciver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/hofmann/LV/ui/ListProductView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="77" column="8" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="28" />
+        <state relative-caret-position="1445">
+          <caret line="141" column="13" lean-forward="true" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

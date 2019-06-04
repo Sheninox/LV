@@ -1,7 +1,6 @@
 package de.hofmann.ArticleDB.dataacess;
 
 import de.hofmann.ArticleDB.modell.Article;
-import de.hofmann.LV.modell.Product;
 import org.jetbrains.annotations.NotNull;
 
 import javax.persistence.EntityManager;
@@ -39,6 +38,12 @@ public class ArticleClient {
     public Article getArticleByID(@NotNull Long ID){
         return em.find(Article.class, ID);
     }
+
+    public Article getArticleByEAN(@NotNull Long EAN){
+
+        return (Article) em.createQuery("select a from Article a where a.EAN = "+EAN).getSingleResult();
+    }
+
 
     public void deleteProduct(@NotNull Article p) {
         em.getTransaction().begin();

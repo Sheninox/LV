@@ -6,7 +6,6 @@ import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.HeaderRow;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
-import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.provider.ListDataProvider;
@@ -15,11 +14,11 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import de.hofmann.ArticleDB.dataacess.ArticleClient;
 import de.hofmann.ArticleDB.modell.Article;
-import de.hofmann.LV.modell.Product;
 import de.hofmann.LV.ui.ListProductView;
 import org.apache.commons.lang3.StringUtils;
+import org.vaadin.teemu.webcam.Webcam;
 
-
+import java.io.File;
 import java.util.List;
 
 @PageTitle("Liste Aller Registriten Artikel")
@@ -28,7 +27,7 @@ public class ListArticleView extends Div {
 	private static final long serialVersionUID = 1L;
 
 	private ArticleClient client;
-
+	private File targetFile;
 	public ListArticleView() {
 
 		client = new ArticleClient();
@@ -87,6 +86,13 @@ public class ListArticleView extends Div {
 		grid.addSelectionListener(s-> this.getUI().ifPresent(ui-> ui.navigate(EditArticleView.class, s.getFirstSelectedItem().get().getID())));
 
 		VerticalLayout layout = new VerticalLayout(Title, grid, create, toProduct);
+
+
+		Webcam cam = new Webcam();
+
+		cam.setWidth("400px");
+
+
 		this.add(layout);
 
 	}
@@ -94,5 +100,7 @@ public class ListArticleView extends Div {
 	private Button buildDeleteButton(Article p) {
 		return new Button("DEL", e -> {client.deleteProduct(p);UI.getCurrent().getPage().reload();});
 	}
+
+
 
 }

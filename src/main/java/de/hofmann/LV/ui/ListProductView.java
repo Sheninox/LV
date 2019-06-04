@@ -127,7 +127,13 @@ public class ListProductView extends Div {
 
 			LocalDateTime startDate = LocalDateTime.ofInstant(d1i, ZoneId.systemDefault());
 			LocalDateTime endDate = LocalDateTime.ofInstant(d2i, ZoneId.systemDefault());
-			if (ChronoUnit.WEEKS.between(startDate, endDate) < 4) {
+			if (ChronoUnit.WEEKS.between(startDate, endDate) <= 0) {
+				Notification notification = new Notification("", -1);
+
+				notification.add(new Label("Produkt: "+ p.getName() +" ist Abgelaufen"));
+				notification.add(new Button("X", e-> notification.close()));
+				notification.open();
+			}else if (ChronoUnit.WEEKS.between(startDate, endDate) < 4){
 				Notification notification = new Notification("", -1);
 
 				notification.add(new Label("Produkt: "+ p.getName() +" Leuft Bald ab"));
