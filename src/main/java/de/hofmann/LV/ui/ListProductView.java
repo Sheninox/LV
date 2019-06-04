@@ -39,17 +39,16 @@ public class ListProductView extends Div {
 	private static final long serialVersionUID = 1L;
 
 	private ProductClient Pclient;
-	private ArticleClient Aclient;
 
 	public ListProductView() {
 
 		Pclient = new ProductClient();
-		Aclient = new ArticleClient();
+		ArticleClient aclient = new ArticleClient();
 
 		Label Title = new Label("Im Lager");
 
 		ComboBox<Article> fast = new ComboBox<>("Artikel auswählen");
-		fast.setItems(Aclient.getAllArticles());
+		fast.setItems(aclient.getAllArticles());
 		fast.setItemLabelGenerator(Article::getName);
 		Button fastAccept = new Button("Erstellen");
 
@@ -98,7 +97,7 @@ public class ListProductView extends Div {
 		databaseAdmin.addClickListener(e->{this.getUI().ifPresent(ui->ui.navigate(de.hofmann.ArticleDB.ui.ListArticleView.class));});
 
 		fastAccept.addClickListener(e->{
-			if (fast.getValue() instanceof Article){
+			if (fast.getValue() != null){
 				Article a = fast.getValue();
 				Product p = new Product();
 				p.setName(a.getName());
