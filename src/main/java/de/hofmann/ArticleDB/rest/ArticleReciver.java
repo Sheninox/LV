@@ -13,8 +13,6 @@ import java.time.LocalDate;
 @Path("/rest")
 public class ArticleReciver {
 
-
-
     @POST
     @Path("/{ean}/{name}/{dur}")
     public Response postSrtMsg(@PathParam("ean") String ean,

@@ -1,6 +1,5 @@
 package de.hofmann.LV.ui;
 
-
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.datepicker.DatePicker;
 import com.vaadin.flow.component.html.Div;
@@ -63,8 +62,6 @@ public class EditProductView extends Div implements HasUrlParameter<Long> {
 				this.getUI().ifPresent(ui -> ui.navigate(ListProductView.class));
 			}
 
-
-
 		});
 		VerticalLayout layout = new VerticalLayout(title, name, date, duration, quantity, save);
 		this.add(layout);
@@ -91,6 +88,5 @@ public class EditProductView extends Div implements HasUrlParameter<Long> {
 		cal.setTime(date);
 		return cal;
 	}
-
 
 }

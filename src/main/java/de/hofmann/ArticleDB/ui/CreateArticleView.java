@@ -1,7 +1,6 @@
 package de.hofmann.ArticleDB.ui;
 
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.datepicker.DatePicker;
 import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.notification.Notification;
@@ -11,7 +10,6 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import de.hofmann.ArticleDB.dataacess.ArticleClient;
 import de.hofmann.ArticleDB.modell.Article;
-
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -26,7 +24,7 @@ public class CreateArticleView extends Div {
 	private ArticleClient client;
 	public CreateArticleView() {
 
-		Label title = new Label("Erstellen eines Produktes");
+		Label title = new Label("Registrieren eines artikels");
 
 		client = new ArticleClient();
 		name = new TextField("Nahme: ");

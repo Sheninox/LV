@@ -34,7 +34,7 @@ public class ListArticleView extends Div {
 
 		Button create = new Button("Neuer eintrag");
 
-		Button toProduct = new Button("Zrurük zum Lager");
+		Button toProduct = new Button("Zurück zum Lager");
 		Label Title = new Label("Alle Registriten Artikel: ");
 
 
